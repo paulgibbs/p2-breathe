@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
-* @package p2-breathe
+ * @package p2-breathe
  */
 
 if ( ! function_exists( 'breathe_content_nav' ) ) :

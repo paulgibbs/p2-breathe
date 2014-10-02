@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (Not Found).
  *
-* @package p2-breathe
+ * @package p2-breathe
  */
 
 get_header(); ?>

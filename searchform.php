@@ -2,7 +2,7 @@
 /**
  * The template for displaying search forms
  *
-* @package p2-breathe
+ * @package p2-breathe
  */
 ?>
 	<form method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">

@@ -7,7 +7,7 @@
  * handled by a callback to breathe_comment() which is
  * located in the inc/template-tags.php file.
  *
-* @package p2-breathe
+ * @package p2-breathe
  */
 ?>
 

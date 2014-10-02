@@ -2,7 +2,7 @@
 /**
  * P2 functions and definitions
  *
-* @package p2-breathe
+ * @package p2-breathe
  */
 
 /**

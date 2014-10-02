@@ -2,7 +2,7 @@
 /**
  * The template for displaying image attachments.
  *
-* @package p2-breathe
+ * @package p2-breathe
  */
 
 get_header();

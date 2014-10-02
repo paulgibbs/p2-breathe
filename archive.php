@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
-* @package p2-breathe
+ * @package p2-breathe
  */
 
 get_header(); ?>

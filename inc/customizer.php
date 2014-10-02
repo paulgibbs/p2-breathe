@@ -2,7 +2,7 @@
 /**
  * Theme Customizer
  *
-* @package p2-breathe
+ * @package p2-breathe
  */
 
 /**
