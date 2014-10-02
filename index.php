@@ -8,7 +8,7 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package breathe
+* @package p2-breathe
  */
 
 get_header(); ?>
@@ -24,11 +24,11 @@ get_header(); ?>
 			<h1 class="page-title">
 			<?php if ( is_home() or is_front_page() ) : ?>
 
-				<?php _e( 'Recent Updates', 'breathe' ); ?> <?php if ( breathe_get_page_number() > 1 ) printf( __( 'Page %s', 'breathe' ), breathe_get_page_number() ); ?>
+				<?php _e( 'Recent Updates', 'p2-breathe' ); ?> <?php if ( breathe_get_page_number() > 1 ) printf( __( 'Page %s', 'p2-breathe' ), breathe_get_page_number() ); ?>
 
 			<?php else : ?>
 
-				<?php printf( _x( 'Updates from %s', 'Month name', 'breathe' ), get_the_time( 'F, Y' ) ); ?>
+				<?php printf( _x( 'Updates from %s', 'Month name', 'p2-breathe' ), get_the_time( 'F, Y' ) ); ?>
 
 			<?php endif; ?>
 

@@ -4,7 +4,7 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package breathe
+* @package p2-breathe
  */
 ?>
 
@@ -13,9 +13,9 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<?php do_action( 'breathe_credits' ); ?>
-			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'breathe' ), 'WordPress' ); ?></a>
+			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'p2-breathe' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'breathe' ), 'Breathe', '<a href="http://geto2.com/" rel="designer">WordPress.com</a>' ); ?>
+			<?php printf( __( 'Theme: %1$s by %2$s.', 'p2-breathe' ), 'P2', '<a href="http://geto2.com/" rel="designer">WordPress.com</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

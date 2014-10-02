@@ -2,7 +2,7 @@
 /**
  * The template for displaying Search Results pages.
  *
- * @package breathe
+* @package p2-breathe
  */
 
 get_header(); ?>
@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<header class="page-header">
 				<h1 class="page-title">
-					<?php printf( __( 'Search Results for: %s', 'breathe' ), '<span>' . get_search_query() . '</span>' ); ?>
+					<?php printf( __( 'Search Results for: %s', 'p2-breathe' ), '<span>' . get_search_query() . '</span>' ); ?>
 
 					<span class="controls">
 						<?php do_action( 'breathe_view_controls' ); ?>

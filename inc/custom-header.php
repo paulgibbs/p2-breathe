@@ -13,7 +13,7 @@
 	<?php } // if ( ! empty( $header_image ) ) ?>
 
  *
- * @package breathe
+* @package p2-breathe
  */
 
 /**
@@ -23,7 +23,7 @@
  * @uses breathe_admin_header_style()
  * @uses breathe_admin_header_image()
  *
- * @package breathe
+* @package p2-breathe
  */
 function breathe_custom_header_setup() {
 	$args = array(

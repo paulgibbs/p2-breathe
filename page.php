@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package breathe
+* @package p2-breathe
  */
 
 get_header(); ?>

@@ -2,7 +2,7 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package breathe
+* @package p2-breathe
  */
 
 if( ! is_active_sidebar( 'sidebar-1' ) )

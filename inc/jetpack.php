@@ -3,7 +3,7 @@
  * Jetpack Compatibility File
  * See: http://jetpack.me/
  *
- * @package breathe
+* @package p2-breathe
  */
 
 /**

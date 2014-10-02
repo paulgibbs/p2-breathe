@@ -1,8 +1,8 @@
 <?php
 /**
- * Breathe functions and definitions
+ * P2 functions and definitions
  *
- * @package breathe
+* @package p2-breathe
  */
 
 /**
@@ -44,10 +44,10 @@ function breathe_setup() {
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
-	 * If you're building a theme based on Breathe, use a find and replace
-	 * to change 'breathe' to the name of your theme in all the template files
+	 * If you're building a theme based on P2, use a find and replace
+	 * to change 'p2-breathe' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'breathe', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'p2-breathe', get_template_directory() . '/languages' );
 
 	/**
 	 * Add default posts and comments RSS feed links to head
@@ -63,7 +63,7 @@ function breathe_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'breathe' ),
+		'primary' => __( 'Primary Menu', 'p2-breathe' ),
 	) );
 
 	/**
@@ -94,7 +94,7 @@ add_action( 'after_setup_theme', 'breathe_register_custom_background' );
  */
 function breathe_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'breathe' ),
+		'name'          => __( 'Sidebar', 'p2-breathe' ),
 		'id'            => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -115,10 +115,10 @@ function breathe_fonts() {
 	 * by Open Sans, translate this to 'off'. Do not translate into your own language.
 	 */
 
-	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'breathe' ) ) {
+	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'p2-breathe' ) ) {
 		wp_register_style( 'breathe-open-sans', "$protocol://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,400,600" );
 	}
-	if ( 'off' !== _x( 'on', 'Serif: on or off', 'breathe' ) ) {
+	if ( 'off' !== _x( 'on', 'Serif: on or off', 'p2-breathe' ) ) {
 		wp_register_style( 'breathe-serif', "$protocol://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic" );
 	}
 }

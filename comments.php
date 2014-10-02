@@ -7,7 +7,7 @@
  * handled by a callback to breathe_comment() which is
  * located in the inc/template-tags.php file.
  *
- * @package breathe
+* @package p2-breathe
  */
 ?>
 
@@ -27,9 +27,9 @@
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above" class="navigation-comment" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'breathe' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'breathe' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'breathe' ) ); ?></div>
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'p2-breathe' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'p2-breathe' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'p2-breathe' ) ); ?></div>
 		</nav><!-- #comment-nav-before -->
 		<?php endif; // check for comment navigation ?>
 
@@ -47,9 +47,9 @@
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="navigation-comment" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'breathe' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'breathe' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'breathe' ) ); ?></div>
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'p2-breathe' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'p2-breathe' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'p2-breathe' ) ); ?></div>
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // check for comment navigation ?>
 
@@ -59,7 +59,7 @@
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'breathe' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'p2-breathe' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>

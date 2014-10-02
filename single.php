@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package breathe
+* @package p2-breathe
  */
 
 get_header(); ?>

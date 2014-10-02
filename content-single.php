@@ -1,6 +1,6 @@
 <?php
 /**
- * @package breathe
+* @package p2-breathe
  */
 ?>
 
@@ -9,7 +9,7 @@
 		<?php if ( !is_page() ) :
 			$author_posts_url = get_author_posts_url( get_the_author_meta( 'ID' ) );
 				$posts_by_title   = sprintf(
-				__( 'Posts by %1$s ( @%2$s )', 'breathe' ),
+				__( 'Posts by %1$s ( @%2$s )', 'p2-breathe' ),
 				get_the_author_meta( 'display_name' ),
 				get_the_author_meta( 'user_nicename' )
 			); ?>
@@ -30,7 +30,7 @@
 			</span>
 			<?php if ( is_object_in_taxonomy( get_post_type(), 'post_tag' ) ) : ?>
 				<span class="entry-tags">
-					<?php breathe_tags_with_count( '', __( '<br />Tags:' , 'breathe' ) .' ', ', ', ' &nbsp;' ); ?>&nbsp;
+					<?php breathe_tags_with_count( '', __( '<br />Tags:' , 'p2-breathe' ) .' ', ', ', ' &nbsp;' ); ?>&nbsp;
 				</span>
 			<?php endif; ?>
 
@@ -42,7 +42,7 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'breathe' ), 'after' => '</div>' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'p2-breathe' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">

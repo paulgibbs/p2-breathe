@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package breathe
+* @package p2-breathe
  */
 
 if ( ! function_exists( 'breathe_content_nav' ) ) :
@@ -31,21 +31,21 @@ function breathe_content_nav( $nav_id ) {
 
 	?>
 	<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'breathe' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'p2-breathe' ); ?></h1>
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'breathe' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'breathe' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'p2-breathe' ) . '</span> %title' ); ?>
+		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'p2-breathe' ) . '</span>' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
 		<?php if ( get_next_posts_link() ) : ?>
-		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'breathe' ) ); ?></div>
+		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'p2-breathe' ) ); ?></div>
 		<?php endif; ?>
 
 		<?php if ( get_previous_posts_link() ) : ?>
-		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'breathe' ) ); ?></div>
+		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'p2-breathe' ) ); ?></div>
 		<?php endif; ?>
 
 	<?php endif; ?>
@@ -68,7 +68,7 @@ function breathe_comment( $comment, $args, $depth ) {
 		case 'trackback' :
 	?>
 	<li class="post pingback">
-		<p><?php _e( 'Pingback:', 'breathe' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'breathe' ), '<span class="edit-link">', '<span>' ); ?></p>
+		<p><?php _e( 'Pingback:', 'p2-breathe' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'p2-breathe' ), '<span class="edit-link">', '<span>' ); ?></p>
 	<?php
 			break;
 		default :
@@ -173,7 +173,7 @@ function breathe_date_time_with_microformat( $type = 'post' ) {
 
 	function breathe_get_date_time_with_microformat( $type = 'post' ) {
 		$d = 'comment' == $type ? 'get_comment_time' : 'get_post_time';
-		return '<abbr title="' . $d( 'Y-m-d\TH:i:s\Z', true ) . '">' . sprintf( __( '%1$s <em>on</em> %2$s', 'breathe' ),  $d( get_option( 'time_format' ) ), $d( get_option( 'date_format' ) ) ) . '</abbr>';
+		return '<abbr title="' . $d( 'Y-m-d\TH:i:s\Z', true ) . '">' . sprintf( __( '%1$s <em>on</em> %2$s', 'p2-breathe' ),  $d( get_option( 'time_format' ) ), $d( get_option( 'date_format' ) ) ) . '</abbr>';
 	}
 
 function breathe_page_number() {

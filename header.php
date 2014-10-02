@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package breathe
+* @package p2-breathe
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -42,7 +42,7 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div><!-- .hgroup -->
 		<nav id="site-navigation" class="navigation-main" role="navigation">
-			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'breathe' ); ?>"><?php _e( 'Skip to content', 'breathe' ); ?></a></div>
+			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'p2-breathe' ); ?>"><?php _e( 'Skip to content', 'p2-breathe' ); ?></a></div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb' => false ) ); ?>
 		</nav><!-- .navigation-main -->

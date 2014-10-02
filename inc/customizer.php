@@ -1,8 +1,8 @@
 <?php
 /**
- * Breathe Theme Customizer
+ * Theme Customizer
  *
- * @package breathe
+* @package p2-breathe
  */
 
 /**
@@ -21,7 +21,7 @@ function breathe_customize_register( $wp_customize ) {
 		'transport'         => 'postMessage',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'alternate_color', array(
-    	'label'    => __( 'Alternate Color', 'breathe' ),
+    	'label'    => __( 'Alternate Color', 'p2-breathe' ),
 		'section'  => 'colors',
 		'settings' => 'breathe_theme_options[alternate_color]',
 	) ) );
@@ -32,7 +32,7 @@ function breathe_customize_register( $wp_customize ) {
 		'transport'         => 'postMessage',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'link_color', array(
-    	'label'    => __( 'Link Color', 'breathe' ),
+    	'label'    => __( 'Link Color', 'p2-breathe' ),
 		'section'  => 'colors',
 		'settings' => 'breathe_theme_options[link_color]',
 	) ) );
