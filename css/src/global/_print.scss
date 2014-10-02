@@ -1,0 +1,40 @@
+@media print {
+
+	* {
+		color: $gray-100 !important;
+		background-color: #fff !important;
+		box-shadow: none;
+	}
+
+	body {
+		background-color: #fff !important;
+	}
+
+	#secondary,
+	.o2-app-new-post,
+	.author-avatar,
+	.entry-actions,
+	.sharedaddy,
+	.o2-post-comments-collapsed,
+	.comment-likes,
+	.o2-app-page-title,
+	#wpstats {
+		display: none !important;
+	}
+
+	#masthead {
+		display: none;
+	}
+
+	#primary {
+		width: 100%;
+	}
+
+	.entry-content,
+	.entry-header,
+	.entry-meta,
+	.entry-title {
+		margin-left: 0 !important;
+		padding-left: 0!important;
+	}
+}

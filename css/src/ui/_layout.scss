@@ -1,0 +1,210 @@
+/* LAYOUT */
+
+/* =Layout
+----------------------------------------------- */
+
+.site {
+	width: 98%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 3.7em 0;
+	position: relative;
+
+	@include  breakpoint( 'tablet-portrait' ){
+		margin:0;
+		width: 100%;
+
+		article{
+
+			&.o2-app-new-post{
+			 	margin: 1em .5em;
+			 }
+		}
+	}
+}
+
+.custom-menu .site {
+	padding-top: 6.1em;
+
+	@include  breakpoint( 'tablet-portrait' ){
+		padding-top: 1em;
+	}
+}
+
+.site-main {
+	position: relative;
+}
+
+.widget-area {
+	float: right;
+	overflow: hidden;
+	width: 25%;
+}
+
+.content-area {
+	float: left;
+	margin: 0;
+	width: 73%;
+}
+
+.no-sidebar {
+	.site {
+		padding-top: 3.7em;
+		max-width: 1000px;
+	}
+
+	.site-main {
+		max-width: 1000px;
+	}
+
+	.content-area {
+		float: none;
+		width: 100%;
+	}
+}
+
+.site-content {
+	margin: 0;
+
+	@include  breakpoint( 'tablet-portrait' ){
+		margin-top: 11px;
+	}
+}
+
+.site-footer {
+	clear: both;
+	width: 100%;
+	max-width: 1200px;
+	margin: 20px auto 0;
+
+	.site-info {
+		margin: 10px 15px;
+	}
+}
+
+/* =Secondary
+----------------------------------------------- */
+#secondary {
+	clear: right;
+
+	@include  breakpoint( 'tablet-portrait' ){
+		position: absolute;
+		top: -20px;
+		right: -275px;
+		width: 240px;
+		padding: 15px;
+		overflow: visible;
+		background: $gray-0;
+		box-shadow: 0px -10px 10px rgba( $gray-50, 0.15 );
+		z-index: 5;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+
+		li {
+			padding: 5px 10px 5px 0;
+		}
+
+		ul {
+			margin-left: 1em;
+		}
+	}
+}
+
+@include  breakpoint( 'tablet-portrait' ){
+	#secondary-content {
+		display: none;
+	}
+
+	body {
+		&.responsive-show {
+			overflow-y: hidden;
+			height: 100%;
+			position: fixed;
+			top: 0;
+
+			#secondary {
+				position: fixed;
+				right: 0px;
+				top: 60px;
+				bottom: 0px;
+				overflow-y: scroll;
+			}
+
+			#secondary-content {
+				display: block;
+			}
+
+			#secondary-toggle {
+				left: 4px;
+				top: 2px;
+			}
+
+			#primary-modal {
+				display: block;
+				height: 100%;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				background: rgba( $gray-100, 0.3 );
+			}
+
+			#o2-expand-editor {
+				display: none;
+			}
+		}
+
+		&.animating {
+			#secondary {
+				transition: transform .25s ease-in-out;
+				-moz-transition: -moz-transform .25s ease-in-out;
+				-webkit-transition: -webkit-transform .25s ease-in-out;
+			}
+
+			#secondary-content {
+				display: block;
+			}
+
+			#secondary-toggle {
+				left: 6px;
+			}
+
+			&.left #secondary {
+				transform: translate3d( -270px, 0, 0 );
+				-moz-transform: translate3d( -270px, 0, 0 );
+				-webkit-transform: translate3d( -270px, 0, 0 );
+			}
+
+			&.right #secondary {
+				transform: translate3d( 270px, 0, 0 );
+				-moz-transform: translate3d( 270px, 0, 0 );
+				-webkit-transform: translate3d( 270px, 0, 0 );
+			}
+		}
+	}
+
+
+	#primary,
+	#secondary {
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+	}
+
+}
+
+@include  breakpoint( 'tablet-portrait' ){
+	#page{
+		overflow-x: hidden;
+	}
+
+	#primary{
+		width: 100%;
+	}
+
+	#primary-modal {
+		display: none;
+	}
+}
