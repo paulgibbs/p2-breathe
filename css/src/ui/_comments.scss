@@ -99,7 +99,8 @@
 
 	.avatar {
 		margin-right: 0;
-		margin-left: 0;
+		margin-left: 3px;
+		margin-top: 5px;
 	}
 
 	p {
@@ -382,4 +383,14 @@
 	}
 
 
+}
+
+article.tag-p2-xpost{
+	.comment{
+		.avatar{
+			margin-left: -10px;
+			margin-top: 0;
+
+		}
+	}
 }
