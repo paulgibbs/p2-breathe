@@ -21,7 +21,7 @@ Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 and Blueprint http://www.blueprintcss.org/
 */
-/* 
+/*
 GLOBAL PARTIALS
 Global partials provide base HTML styling as well as variables and mixins to be used in the UI partials
 */
@@ -670,7 +670,7 @@ ol {
   background-color: #feffc2;
 }
 
-/* 
+/*
 UI PARTIALS
 UI partials provide the higher-level styles required for o2 to function and display properly
 */
