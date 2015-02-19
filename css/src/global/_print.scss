@@ -18,7 +18,14 @@
 	.o2-post-comments-collapsed,
 	.comment-likes,
 	.o2-app-page-title,
-	#wpstats {
+	#wpstats,
+	#wpeditor-container,
+	.widget.widget_office-hours-widget,
+	#respond, 
+	footer, 
+	#static-footer,
+	.navigation,
+	.o2-comment-actions {
 		display: none !important;
 	}
 
