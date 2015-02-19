@@ -173,6 +173,52 @@ a img {
   clear: both;
 }
 
+@media print {
+  * {
+    color: black !important;
+    background-color: #fff !important;
+    box-shadow: none;
+  }
+
+  body {
+    background-color: #fff !important;
+  }
+
+  #secondary,
+  .o2-app-new-post,
+  .author-avatar,
+  .entry-actions,
+  .sharedaddy,
+  .o2-post-comments-collapsed,
+  .comment-likes,
+  .o2-app-page-title,
+  #wpstats,
+  #wpeditor-container,
+  .widget.widget_office-hours-widget,
+  #respond,
+  footer,
+  #static-footer,
+  .navigation,
+  .o2-comment-actions {
+    display: none !important;
+  }
+
+  #masthead {
+    display: none;
+  }
+
+  #primary {
+    width: 100%;
+  }
+
+  .entry-content,
+  .entry-header,
+  .entry-meta,
+  .entry-title {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+}
 /* LINKS */
 .entry-content p a,
 .comment-content p a,
@@ -278,7 +324,7 @@ textarea {
 code {
   background: #f1f1f1;
   color: #222222;
-  padding: 0.4em 0.65em;
+  padding: .4em .65em;
   font-size: 0.8em;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -603,7 +649,7 @@ UI partials provide the higher-level styles required for o2 to function and disp
     width: 100%;
   }
   .site article.o2-app-new-post {
-    margin: 1em 0.5em;
+    margin: 1em .5em;
   }
 }
 
@@ -730,9 +776,9 @@ UI partials provide the higher-level styles required for o2 to function and disp
     display: none;
   }
   body.animating #secondary {
-    transition: transform 0.25s ease-in-out;
-    -moz-transition: -moz-transform 0.25s ease-in-out;
-    -webkit-transition: -webkit-transform 0.25s ease-in-out;
+    transition: transform .25s ease-in-out;
+    -moz-transition: -moz-transform .25s ease-in-out;
+    -webkit-transition: -webkit-transform .25s ease-in-out;
   }
   body.animating #secondary-content {
     display: block;
@@ -986,7 +1032,7 @@ textarea {
 
 /* TOP MENU and POST NAVIGATION */
 .navigation {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
 }
 .navigation p {
   float: left;
@@ -1001,7 +1047,7 @@ textarea {
  * Keyboard navigation
  */
 .keyselected {
-  border-left: 2px solid #ff9912;
+  border-left: 2px solid #FF9912;
 }
 
 #nav-below {
@@ -1225,7 +1271,7 @@ textarea {
   #secondary-toggle:before {
     content: '\f419';
     -webkit-font-smoothing: antialiased;
-    font: normal 32px/1 "Genericons";
+    font: normal 32px/1 'Genericons';
   }
 
   body:not(.custom-menu) #secondary-toggle {
@@ -1280,7 +1326,7 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 1.2rem;
   line-height: 1;
-  padding: 0.6em 1em 0.4em;
+  padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   font-family: "Open Sans", sans-serif;
 }
@@ -1681,7 +1727,7 @@ aside {
 
 .o2-tags-array {
   display: block;
-  padding: 0.2em 0;
+  padding: .2em 0;
 }
 
 .ui-helper-hidden-accessible {
@@ -1863,7 +1909,7 @@ td.recentcommentstextend {
 }
 @media (max-width: 550px) {
   .o2-comment {
-    margin-top: 5px!important;
+    margin-top: 5px !important;
   }
   .o2-comment#respond {
     padding: 20px 0px 20px 5px !important;
