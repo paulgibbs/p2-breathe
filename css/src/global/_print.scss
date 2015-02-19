@@ -25,7 +25,10 @@
 	footer, 
 	#static-footer,
 	.navigation,
-	.o2-comment-actions {
+	.o2-comment-actions,
+	.o2-dropdown-actions,
+	.o2-dropdown-actions-disclosure.genericon.genericon-ellipsis,
+	#superadminbar{
 		display: none !important;
 	}
 
