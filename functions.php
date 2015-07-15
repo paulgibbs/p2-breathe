@@ -108,18 +108,16 @@ add_action( 'widgets_init', 'breathe_widgets_init' );
  * Enqueue Google Fonts
  */
 function breathe_fonts() {
-	$protocol = is_ssl() ? 'https' : 'http';
-
 	/**
 	 * translators: If there are characters in your language that are not supported
 	 * by Open Sans, translate this to 'off'. Do not translate into your own language.
 	 */
 
 	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'p2-breathe' ) ) {
-		wp_register_style( 'breathe-open-sans', "$protocol://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,400,600" );
+		wp_register_style( 'breathe-open-sans', "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,400,600" );
 	}
 	if ( 'off' !== _x( 'on', 'Serif: on or off', 'p2-breathe' ) ) {
-		wp_register_style( 'breathe-serif', "$protocol://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic" );
+		wp_register_style( 'breathe-serif', "https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic" );
 	}
 }
 add_action( 'init', 'breathe_fonts' );
