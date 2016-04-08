@@ -6,12 +6,17 @@ article.page {
 	-webkit-transform-style: preserve3d;
 	background: $gray-0;
 	margin: 0 0 3.2em;
+	padding: 1.6em 0;
 
 
 	@include breakpoint( 'handset-portrait'){
 		margin: 0 0.5em 0.5em 0.5em;
 	}
 
+	&.sticky {
+		border: 2px #d47300 solid;
+		background: #ffffe6;
+	}
 
 	a.author-avatar {
 		float: left;
@@ -218,6 +223,21 @@ article.page {
 		}
 
 
+	}
+}
+
+.o2 {
+
+	article.post,
+	article#post-new,
+	article.page {
+
+		padding: 0;
+
+		&.sticky {
+			border: 0;
+			background: transparent;
+		}
 	}
 }
 

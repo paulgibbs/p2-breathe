@@ -1,3 +1,4 @@
+/*THIS FILE IS COMPILED FROM AN .SCSS FILE - DO NOT EDIT DIRECTLY*/
 /*
 Theme Name: P2
 Theme URI: http://p2theme.com/
@@ -1142,12 +1143,18 @@ article#post-new,
 article.page {
   -webkit-transform-style: preserve3d;
   background: white;
-  margin: 0 0 3.2em; }
+  margin: 0 0 3.2em;
+  padding: 1.6em 0; }
   @media (max-width: 550px) {
     article.post,
     article#post-new,
     article.page {
       margin: 0 0.5em 0.5em 0.5em; } }
+  article.post.sticky,
+  article#post-new.sticky,
+  article.page.sticky {
+    border: 2px #d47300 solid;
+    background: #ffffe6; }
   article.post a.author-avatar,
   article#post-new a.author-avatar,
   article.page a.author-avatar {
@@ -1371,6 +1378,16 @@ article.page {
     article#post-new .entry-content,
     article.page .entry-content {
       margin: 0; } }
+
+.o2 article.post,
+.o2 article#post-new,
+.o2 article.page {
+  padding: 0; }
+  .o2 article.post.sticky,
+  .o2 article#post-new.sticky,
+  .o2 article.page.sticky {
+    border: 0;
+    background: transparent; }
 
 div.sharedaddy.sharedaddy-dark .sd-block {
   border-top: 1px #dddddd solid; }
