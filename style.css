@@ -1387,7 +1387,7 @@ article.page {
   .o2 article#post-new.sticky,
   .o2 article.page.sticky {
     border: 0;
-    background: transparent; }
+    background: white; }
 
 div.sharedaddy.sharedaddy-dark .sd-block {
   border-top: 1px #dddddd solid; }
