@@ -99,6 +99,9 @@ blockquote {
 		font-style: normal;
 	}
 
+	&.wp-embedded-content {
+		padding: 1.2em;
+	}
 }
 
 address {
@@ -333,3 +336,4 @@ ol {
 .highlight {
 	background-color: rgba( $yellow-0, 1 );
 }
+
