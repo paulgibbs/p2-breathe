@@ -1,3 +1,4 @@
+/*THIS FILE IS COMPILED FROM AN .SCSS FILE - DO NOT EDIT DIRECTLY*/
 /*
 Theme Name: P2
 Theme URI: http://p2theme.com/
@@ -7,7 +8,7 @@ Description: Communication is oxygen. P2 "Breathe" is the first o2-enabled theme
 Version: 1.0-wpcom
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-background, custom-header, custom-menu, featured-images, front-page-post-form, infinite-scroll, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, collaboration, lifestream, clean
+Tags: blue, classic-menu, clean, collaboration, custom-background, custom-header, custom-menu, featured-images, front-page-post-form, infinite-scroll, lifestream, light, post-formats, responsive-layout, right-sidebar, rtl-language-support, sticky-post, theme-options, translation-ready, two-columns, white
 Text Domain: p2-breathe
 Supports Oxygen: true
 
@@ -21,7 +22,7 @@ Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 and Blueprint http://www.blueprintcss.org/
 */
-/* 
+/*
 GLOBAL PARTIALS
 Global partials provide base HTML styling as well as variables and mixins to be used in the UI partials
 */
@@ -634,7 +635,7 @@ ol {
   background-color: #feffc2;
 }
 
-/* 
+/*
 UI PARTIALS
 UI partials provide the higher-level styles required for o2 to function and display properly
 */
